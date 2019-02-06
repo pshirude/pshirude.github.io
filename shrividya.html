@@ -25,6 +25,21 @@
 .dropdown-content a:hover {background-color: #ddd;}
 
 .dropdown:hover .dropdown-content {display: block;}
+
+.top-navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding-top: 10px;
+    min-width: 182px;
+    left: 15px;
+}
+.top-navbar-right{
+	padding-top:18px
+}
+
+
+
 </style>
 <head>
   <meta charset="UTF-8">
@@ -66,14 +81,19 @@
         </a>
       </div>
 
-	<div class="dropdown-header collapse navbar-collapse">
-	  <ul> About Us
-	  <div class="dropdown-menu nav navbar-nav navbar-right">
-		<li><a href="#">Gallery</a></li>
-		<li><a href="#">Infrastructure</a></li>
-	  </div>
-	  </ul>
-	</div>
+	<ul class="nav navbar-nav navbar-right top-navbar-right">
+		<li class="dropdown"> About Us
+			<div class="dropdown-menu">
+				<ul>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Infrastructure</a></li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<a href="#">Courses</a>
+		</li>
+	</ul>
     </div>
   </nav>
 </header>
